@@ -1,8 +1,8 @@
 export default class Transcriptor {
   toRna(dna) {
-    const decoder = { 'G': 'C', 'C': 'G', 'T': 'A', 'A': 'U'}
+    const decoder = { G: 'C', C: 'G', T: 'A', A: 'U' }
 
-    if (dna.includes(Object.keys(decoder))) {
+    if (dna.match(/[^GCTA]/g) != null) {
       throw new Error('Invalid input DNA.')
     }
 
