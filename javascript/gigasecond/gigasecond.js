@@ -1,0 +1,1 @@
+export const gigasecond = time => new Date((time.getTime() / 1000 + 1000000000) * 1000)
