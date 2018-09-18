@@ -25,9 +25,6 @@ class Sieve
       if (arr[i])
         while j < @num
           j = i * i + counter * i
-          # if  (j > @num)
-          #   break
-          # end
           arr[j] = false
           counter += 1
         end
